@@ -33,3 +33,17 @@ To use this application, follow the steps below:
 ## Note
 
 This application is meant for educational purposes only. It is not intended to be used in production environments. If you need to access Google Sheets from your application, it is recommended to use the Google Sheets API directly.
+
+Here's an example of a cURL request to test the application:
+
+```bash
+curl --location --request GET 'http://localhost:5000/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "doc_key": "your_document_key_here",
+    "sheet": "your_sheet_name_here",
+    "creds_id": "your_credentials_file_id_here"
+}'
+```
+
+Replace the placeholders with your own values and run the command in your terminal to retrieve the data from the Google Sheet in JSON format.
