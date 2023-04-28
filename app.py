@@ -13,6 +13,7 @@ if __name__ == '__main__':
     
 @app.route('/', methods=['GET'])
 def getData():
+        
         print(request)
         request_data = request.get_json()
         print(request_data)
