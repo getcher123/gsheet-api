@@ -11,7 +11,7 @@ CORS(app)
 if __name__ == '__main__':
     app.run()
     
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['POST'])
 def getData():
         
         print(request)
