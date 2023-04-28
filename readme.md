@@ -34,6 +34,8 @@ To use this application, follow the steps below:
 
 This application is meant for educational purposes only. It is not intended to be used in production environments. If you need to access Google Sheets from your application, it is recommended to use the Google Sheets API directly.
 
+## How to test
+
 Here's an example of a cURL request to test the application:
 
 ```bash
@@ -48,7 +50,7 @@ curl --location --request GET 'http://localhost:5000/' \
 
 Replace the placeholders with your own values and run the command in your terminal to retrieve the data from the Google Sheet in JSON format.
 
-Sure, here's a detailed explanation of where to get the variables needed to run the application:
+Here's explanation of where to get the variables needed to run the application:
 
 - `doc_key`: This refers to the key of the Google Sheet document you want to access. You can find the document key in the URL of the Google Sheet. It is the part of the URL that comes after "/d/" and before "/edit". For example, if the URL of your Google Sheet is `https://docs.google.com/spreadsheets/d/abc123456789/edit#gid=0`, then the document key is `abc123456789`.
 
