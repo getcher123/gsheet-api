@@ -47,3 +47,13 @@ curl --location --request GET 'http://localhost:5000/' \
 ```
 
 Replace the placeholders with your own values and run the command in your terminal to retrieve the data from the Google Sheet in JSON format.
+
+Sure, here's a detailed explanation of where to get the variables needed to run the application:
+
+- `doc_key`: This refers to the key of the Google Sheet document you want to access. You can find the document key in the URL of the Google Sheet. It is the part of the URL that comes after "/d/" and before "/edit". For example, if the URL of your Google Sheet is `https://docs.google.com/spreadsheets/d/abc123456789/edit#gid=0`, then the document key is `abc123456789`.
+
+- `sheet`: This refers to the name of the sheet you want to access. If you have multiple sheets in your Google Sheet document, you need to specify the name of the sheet you want to access. The sheet name should be exact and match the name of the sheet as it appears in the Google Sheet document.
+
+- `creds_id_google_drive`: This refers to the ID of the credentials JSON file that you uploaded to Google Drive. You can find the ID in the URL of the file. It is the part of the URL that comes after "/d/" and before "/view". For example, if the URL of your credentials JSON file is `https://drive.google.com/file/d/xyz987654321/view`, then the credentials ID is `xyz987654321`.
+
+You need to ensure that the Google Sheet document and the credentials JSON file are shared with the service account email address provided in the credentials JSON file. You can find the service account email address in the "client_email" field of the JSON file.
